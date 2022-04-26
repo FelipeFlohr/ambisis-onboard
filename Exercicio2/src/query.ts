@@ -5,6 +5,6 @@ export const query = async () => await dao.select({
     join: {
         table: "vistoriafoto",
         on: { __col_relation: { "vistoriaId": "id" } },
-        
+        type: "left",
     }
 })
