@@ -1,0 +1,15 @@
+{
+  "name": "exercicio1",
+  "version": "1.0.0",
+  "description": "Exercício 1",
+  "main": "out/index.js",
+  "scripts": {
+    "start": "npx tsc && node out/index.js"
+  },
+  "author": "Felipe Matheus Flohr",
+  "license": "ISC",
+  "dependencies": {
+    "@types/node": "^17.0.27",
+    "mysql-all-in-one": "^3.0.20"
+  }
+}
