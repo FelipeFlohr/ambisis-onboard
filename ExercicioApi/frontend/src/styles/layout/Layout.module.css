@@ -1,0 +1,11 @@
+.navbar {
+    background-color: #1b1a1a;
+    color: #fff;
+    width: 100%;
+}
+
+.navbar span {
+    background-color: rgb(70, 58, 58);
+    margin-right: 5px;
+    cursor: pointer;
+}

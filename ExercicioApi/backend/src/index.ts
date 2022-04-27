@@ -1,11 +1,13 @@
 import express from "express";
+import { envProvider } from "./providers/envProvider";
 import routes from "./routes/routes";
+import cors from "cors"
 
 const app = express()
-app.listen(3000, () => {
-    console.log("Application up and running at http://localhost:3000")
-})
+app.use(cors())
 
-app.get("/teste", (req, res) => {})
+app.listen(envProvider.serverPort, () => {
+    console.log(`Application up and running at http://localhost:${envProvider.serverPort}`)
+})
 
 routes(app)
