@@ -6,5 +6,16 @@ export const query = async () => await dao.select({
         table: "vistoriafoto",
         on: { __col_relation: { "vistoriaId": "id" } },
         type: "left",
+        columns: { imagemId: "id", imagemDescricao: "descricao" }
+    },
+}, {
+    groupData: {
+        by: "id",
+        columnGroups: {
+            fotos: {
+                id: "imagemId",
+                descricao: "imagemDescricao"
+            }
+        }
     }
 })
