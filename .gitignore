@@ -8,3 +8,7 @@
 /Exercicio1/out
 /Exercicio2/node_modules
 /Exercicio2/out
+/ExercicioApi/node_modules
+/ExercicioApi/backend/node_modules
+/ExercicioApi/backend/dist
+/ExercicioApi/frontend/node_modules
